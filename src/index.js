@@ -1,5 +1,11 @@
 // TODO: 'import' functional components from "./components"
 
+import * as api from './api/index.js'
+
+(async () => {
+  getAll
+  {}
+}
 // '#root' is the 'mounting point' for our app inside of './index.html'
 const root = document.querySelector('#root')
 
