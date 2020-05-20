@@ -1,4 +1,4 @@
-// TODO: 'import' functional components from "./components"
+import * as api from './api'
 
 import * as api from './api/index.js'
 
@@ -26,5 +26,10 @@ const render = (state) => {
   root.innerHTML = ''
 }
 
-// TODO: Remove this 👇🏽
-console.log(state, render)
+(async () => {
+  try {
+    state.posts = await api.getAllPosts()
+  } catch (error) {
+    console.error(error)
+  }
+})()

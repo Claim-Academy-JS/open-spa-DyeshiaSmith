@@ -1,5 +1,3 @@
-// TODO: Add `async` FUNCTIONS to 'talk to' your database.
-
 export const getAllPosts = async () => {
   try {
     const resp = await window.fetch('https://jsonplaceholder.typicode.com/posts')
@@ -9,5 +7,3 @@ export const getAllPosts = async () => {
     throw Error(error)
   }
 }
-
-//  export const getPosts
