@@ -1,9 +1,9 @@
 import * as api from './api'
 
-import * as api from './api/index.js'
+import { Posts } from './components'
 
-(async () => {
-  getAll
+console.log(Posts)
+
   {}
 }
 // '#root' is the 'mounting point' for our app inside of './index.html'
