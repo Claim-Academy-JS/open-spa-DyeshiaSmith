@@ -9,6 +9,9 @@ console.log(Posts)
 // '#root' is the 'mounting point' for our app inside of './index.html'
 const root = document.querySelector('#root')
 
+const state = {
+  posts: []
+}
 /**
  * 'state' keeps track of...the 'state' of our application.
  * It contains any/all information that
@@ -23,12 +26,15 @@ const state = {
 
 const render = (state) => {
   // 'innerHTML' will be updated with the HTML 'return'ed from the FUNCTIONAL COMPONENTS.
-  root.innerHTML = ''
+  root.innerHTML = `
+    ${Posts(state)}
+  `
 }
 
 (async () => {
   try {
     state.posts = await api.getAllPosts()
+    render(state)
   } catch (error) {
     console.error(error)
   }
