@@ -1,2 +1,10 @@
+const createPostsHTML = (posts) => {
+  return posts.map(({ title, body }) => {
+    return `
+    <h2>${title}</h2>
+    <p>${body}</p>
+    `
+  }).join(' ')
+}
 
-export default ({ posts }) => `<p>${posts}</p>`
+export default ({ posts }) => `${createPostsHTML(posts)}`
