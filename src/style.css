@@ -2,8 +2,17 @@
   (https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)
 */
 
+:root {
+  --color-primary: #FBEAFF;
+  --secondary-color: #845EC2;
+  --tertiary-color: #00C9A7;
+}
+
+font-family: 'Oswald', sans-serif;
+
 body {
   /* TODO: Update font. */
+  background-color: var(--color-primary);
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
 }
