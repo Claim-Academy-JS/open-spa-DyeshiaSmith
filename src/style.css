@@ -21,6 +21,13 @@ h1 {
   text-align: center;
 }
 
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 3px solid purple;
+}
+
 /* TODO: Set up type-scaling.
   (https://type-scale.com/)
 */
